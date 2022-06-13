@@ -1,0 +1,12 @@
+@import "../Variables.module.scss";
+
+.horizontalContainer {
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        width: 203px;
+    }
+}

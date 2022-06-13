@@ -1,0 +1,27 @@
+@import "./Variables.module.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: $grey;
+}
+
+button {
+  width: 131px;
+  height: 27px;
+  padding: 5px;
+  border-radius: 50px;
+  border-width: 2px;
+  border-style: solid;
+  background-color: $blue;
+  border-color: $blue;
+  color: $white;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: $white;
+  color: $blue;
+}
