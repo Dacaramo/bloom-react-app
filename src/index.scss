@@ -10,7 +10,6 @@ body {
 button {
   width: 131px;
   height: 27px;
-  padding: 5px;
   border-radius: 50px;
   border-width: 2px;
   border-style: solid;
@@ -24,4 +23,19 @@ button {
 button:hover {
   background-color: $white;
   color: $blue;
+}
+
+input, select {
+  width: 100%;
+  display: block;
+  max-width: 400px;
+  padding: 8px;
+  border-radius: 10px;
+  border-width: 2px;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;;
+  border-style: solid;
+  background-color: $white;
+  border-color: $input-border-grey;
+  color: $grey;
 }
