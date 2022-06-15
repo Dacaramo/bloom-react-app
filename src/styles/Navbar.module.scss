@@ -11,9 +11,12 @@
     }
 }
 
-@media all and (max-width: 500px) {
+@media screen and (max-width: 500px) {
     .horizontalContainer {
         padding-left: 25px;
         padding-right: 25px;
+        img {
+            width: 153px;
+        }
     }
 }
