@@ -1,14 +1,13 @@
 @import "../Variables.module.scss";
 
 .mainContainer {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 250px;
+    padding-right: 250px;
+    gap: 40px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 500px;
-
 }
 
 @media screen and (max-width: 500px) {
@@ -67,10 +66,17 @@
     justify-content: center;
     align-items: center;
     gap: 25px;
+    align-self: flex-end;
     div {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
         padding: 20px;
-        width: 300px;
-        height: 150px;
+        width: 400px;
+        height: 100px;
         border-radius: 15px;
         background-color: $blue;
         box-shadow: 7.5px 7.5px 6px rgb(168, 168, 168);
@@ -79,8 +85,16 @@
             text-align: center;
             color: $white;
         }
-        img {
-            width: 203px;
-        }
     }
+}
+
+.bloomLogoImg {
+    width: 203px;
+}
+
+.happyWomanImg {
+    position: absolute;
+    left: 15%;
+    width: 300px;
+    bottom: 100%;
 }

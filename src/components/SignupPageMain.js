@@ -1,5 +1,6 @@
 import myStyles from "../styles/SignupPageMain.module.scss";
 import logo from "../images/BloomLogoOnBlue.png";
+import happyWomanImg from "../images/HappyWoman.png";
 import { useNavigate } from "react-router-dom";
 
 const SignupPageMain = () => {
@@ -34,9 +35,10 @@ const SignupPageMain = () => {
                 <button type="submit">Inscribirse</button>
             </form>
             <div className={myStyles.returnContainer}>
-                <div> 
+                <div>
+                    <img className={myStyles.happyWomanImg} src={happyWomanImg} alt=""/>
                     <span>Vigilados por:</span>
-                    <img src={logo} alt="" />
+                    <img className={myStyles.bloomLogoImg} src={logo} alt="" />
                 </div>
                 <button onClick={() => navigate("/")}>Regresar</button>
             </div>

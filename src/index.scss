@@ -26,7 +26,6 @@ button:hover {
 }
 
 input, select {
-  width: 100%;
   padding: 8px;
   border-radius: 10px;
   border-width: 2px;
@@ -39,10 +38,12 @@ input, select {
 }
 
 input {
+  width: 100%;
   max-width: 400px;
 }
 
 select {
+  width: 100%;
   max-width: 400px;
 }
 
