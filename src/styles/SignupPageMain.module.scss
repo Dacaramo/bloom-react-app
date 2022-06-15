@@ -3,31 +3,48 @@
 .mainContainer {
     padding-left: 250px;
     padding-right: 250px;
-    gap: 40px;
+    gap: 25px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1562px) {
+    .mainContainer {
+        gap: 400px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .mainContainer {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 
 @media screen and (max-width: 500px) {
     .mainContainer {
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 0px;
+        padding-right: 0px;
+        justify-content: center;
     }
 }
 
 // First child related selectors
 
 .formContainer {
-    padding: 20px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     background-color: $blue;
+    width: 500px;
+    min-width: 500px;
     border-radius: 15px;
-    gap: 25px;
+    gap: 10px;
     box-shadow: 7.5px 7.5px 6px rgb(168, 168, 168);
     h1 {
         margin: 0;
@@ -35,17 +52,14 @@
         text-align: center;
         color: $white;
     }
-    div {
-        width: 100%;
-        max-width: 400px;
-        label {
-            margin-left: 10px;
-            font-size: 15px;
-            color: $white;
-        }
-    }
     label {
+        align-self:flex-start;
+        margin-left: 95px;
+        font-size: 15px;
         color: $white;
+    }
+    select + label {
+        margin: auto;
     }
     button {
         width: 336px;
@@ -57,6 +71,21 @@
         color: $blue;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .formContainer {
+        padding: 20px 1px;
+        width: 350px;
+        min-width: 350px;
+        label {
+            align-self:flex-start;
+            margin-left: 20px;
+            font-size: 15px;
+            color: $white;
+        }
+    }
+}
+
 
 // Second child related selectors
 
@@ -97,4 +126,10 @@
     left: 15%;
     width: 300px;
     bottom: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .returnContainer {
+        display: none;
+    }
 }

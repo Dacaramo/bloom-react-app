@@ -1,0 +1,28 @@
+@import "../Variables.module.scss";
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    button {
+        margin-top: 25px;
+    }
+}
+
+.cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: $blue;
+    span {
+        font-size: 15px;
+        color: $white
+    }
+}

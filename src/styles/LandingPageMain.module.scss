@@ -35,6 +35,12 @@
     gap: 25px;
 }
 
+@media screen and (max-width: 500px) {
+    .firstChildContainer {
+        justify-content: center;
+    }
+}
+
 .warrantyCard {
     max-width: 300px;
     height: 350px;
