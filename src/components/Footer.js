@@ -1,7 +1,10 @@
 import myStyles from "../styles/Footer.module.scss";
 import logo from "../images/BloomLogoOnGrey.png";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+    const navigate = useNavigate();
+
     return (
         <div className={myStyles.mainContainer}>
             <div className={myStyles.linksSectionContainer}>
@@ -17,13 +20,13 @@ const Footer = () => {
                     <a href="">Boletines</a>
                 </div>
             </div>
-            <form className={myStyles.miniFormSectionContainer}>
-                <h1>¿Quieres estar Actualizado?</h1>
+            <div className={myStyles.miniFormSectionContainer}>
+                <h1>¿Quieres estar actualizado?</h1>
                 <input type="email" placeholder="example@hello.com"/>
-                <button type="submit">Inscríbete</button>
+                <button onClick={() => navigate("/signup")}>Inscríbete</button>
                 <span>Al hacer click en el botón "Inscríbete" aceptas nuestra <a>política de tratamiento de datos</a></span>
                 <span>© 2022 Bloom Crowdfunding S.A.C, todos los derechos reservados</span>
-            </form>
+            </div>
             <div className={myStyles.lastSectionContainer}>
                 <span>Siguenos en nuestras redes sociales</span>
                 <div className={myStyles.socialNetworksContainer}>

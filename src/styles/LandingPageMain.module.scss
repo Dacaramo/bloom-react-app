@@ -10,7 +10,7 @@
     align-items: flex-start;
 }
 
-@media all and (max-width: 500px) {
+@media screen and (max-width: 500px) {
     .mainContainer {
         padding-left: 25px;
         padding-right: 25px;
@@ -27,7 +27,9 @@
 
 .firstChildContainer {
     composes: horizontalContainer;
-    max-width: 947px;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+    max-width: 1160px;
     justify-content: space-between;
     align-items: center;
     gap: 25px;
@@ -63,7 +65,7 @@
 }
 
 .learnMoreContainer {
-    max-width: 550px;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -83,6 +85,7 @@
         width: 336px;
         height: 44px;
         font-size: 20px;
+        cursor: not-allowed;
     }
 }
 
@@ -129,20 +132,46 @@
     bottom: 0%;
 }
 
-@media all and (max-width: 1585px) {
+.watchByContainer {
+    position: absolute;
+    left: 82.5%;
+    bottom: 7.7%;
+    max-width: 145px;
+    height: 58px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: $white;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(252, 80, 80);
+    span {
+        margin: 0;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    img{
+        width: 132px;
+    }
+}
+
+@media screen and (max-width: 1585px) {
     .surprisedManImg {
         width: 300px;
         left: 75%;
     }
 }
 
-@media all and (max-width: 1410px) {
+@media screen and (max-width: 1410px) {
     .surprisedManImg {
+        display: none;
+    }
+    .watchByContainer {
         display: none;
     }
 }
 
-@media all and (max-width: 1127px) {
+@media screen and (max-width: 1127px) {
     .secondChildContainer {
         composes: horizontalContainer;
         position: relative;
@@ -159,7 +188,7 @@
     }
 }
 
-@media all and (max-width: 1076px) {
+@media screen and (max-width: 1076px) {
     .secondChildContainer {
         composes: horizontalContainer;
         position: relative;
@@ -176,11 +205,11 @@
     }
 }
 
-@media all and (max-width: 500px) {
+@media screen and (max-width: 500px) {
     .secondChildContainer {
         composes: horizontalContainer;
         position: relative;
-        width: 100%;
+        width: 90%;
         max-width: 1704px;
         height: 220px;
         padding: 20px;
@@ -212,7 +241,7 @@
     .surprisedManImg {
         display: inline;
         width: 125px;
-        left: 45%;
+        left: 50%;
     }
 }
 
@@ -255,5 +284,6 @@
         width: 336px;
         height: 44px;
         font-size: 20px;
+        cursor: not-allowed;
     }
 }

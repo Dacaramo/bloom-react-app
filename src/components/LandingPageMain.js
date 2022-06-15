@@ -5,6 +5,7 @@ import investImg from "../images/Invest.png";
 import profitImg from "../images/Profit.png";
 import womanImg from "../images/CircleWoman.png";
 import surprisedMan from "../images/SurprisedMan.png";
+import logo from "../images/BloomLogo.png";
 
 const LandingPageMain = () => {
     return (
@@ -35,6 +36,10 @@ const LandingPageMain = () => {
                     <span>Recibe una ganancia por tu inversión</span>
                 </div>
                 <img className={myStyles.surprisedManImg} src={surprisedMan} alt=""/>
+                <div className={myStyles.watchByContainer}>
+                    <span>Vigilados por: </span>
+                    <img src={logo} alt="" />
+                </div>
             </div>
             <div className={myStyles.thirdChildContainer}>
                 <img src={womanImg} alt="" />

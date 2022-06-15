@@ -1,6 +1,14 @@
+import Navbar from "../components/Navbar";
+import SignupPageMain from "../components/SignupPageMain";
+import Footer from "../components/Footer";
+
 const SignupPage = () => {
     return (
-        <div>SignupPage</div>
+        <>
+            <Navbar />
+            <SignupPageMain />
+            <Footer />
+        </>
     );
 }
 

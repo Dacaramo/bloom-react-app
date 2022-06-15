@@ -1,0 +1,86 @@
+@import "../Variables.module.scss";
+
+.mainContainer {
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 500px;
+
+}
+
+@media screen and (max-width: 500px) {
+    .mainContainer {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+// First child related selectors
+
+.formContainer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $blue;
+    border-radius: 15px;
+    gap: 25px;
+    box-shadow: 7.5px 7.5px 6px rgb(168, 168, 168);
+    h1 {
+        margin: 0;
+        font-size: 30px;
+        text-align: center;
+        color: $white;
+    }
+    div {
+        width: 100%;
+        max-width: 400px;
+        label {
+            margin-left: 10px;
+            font-size: 15px;
+            color: $white;
+        }
+    }
+    label {
+        color: $white;
+    }
+    button {
+        width: 336px;
+        height: 44px;
+        font-size: 20px;
+        cursor: pointer;
+        background-color: $white;
+        border-color: $white;
+        color: $blue;
+    }
+}
+
+// Second child related selectors
+
+.returnContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    div {
+        padding: 20px;
+        width: 300px;
+        height: 150px;
+        border-radius: 15px;
+        background-color: $blue;
+        box-shadow: 7.5px 7.5px 6px rgb(168, 168, 168);
+        span {
+            font-size: 20px;
+            text-align: center;
+            color: $white;
+        }
+        img {
+            width: 203px;
+        }
+    }
+}
