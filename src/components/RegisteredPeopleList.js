@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 const RegisteredPeopleList = () => {
     const navigate = useNavigate();
     const [peopleList, setPeopleList] = useState([]);
+    const [isFetchingInProcess, setIsFetchingInProcess] = useState(true);
 
     useEffect(() => {
         fetchPeopleList();
@@ -14,11 +15,14 @@ const RegisteredPeopleList = () => {
     const fetchPeopleList = async () => {
         const response = await Axios.get(`https://72fc7xa4pk.execute-api.us-east-2.amazonaws.com/prueba/api/v2/portal/dev-test`);
         setPeopleList(response.data.data);
+        setIsFetchingInProcess(false);
     }
 
     return (
         <div className={myStyles.list}>
             {
+                isFetchingInProcess ?
+                <span>Cargando...</span> :
                 peopleList.map((person) => {
                     return (<div className={myStyles.cell}>
                                 <span><b>Nombre: </b>{person.name}</span>

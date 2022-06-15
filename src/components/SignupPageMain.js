@@ -30,10 +30,10 @@ const SignupPageMain = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        setFormSubmitted(true);
         setIsLoading(true);
         await Axios.post(`https://72fc7xa4pk.execute-api.us-east-2.amazonaws.com/prueba/api/v2/portal/dev-test`, body);
         setIsLoading(false);
+        setFormSubmitted(true);
     }
 
     return (
