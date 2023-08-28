@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bloom-react-app/static/css/main.996b0a36.css",
-    "main.js": "/bloom-react-app/static/js/main.eab49932.js",
+    "main.js": "/bloom-react-app/static/js/main.98a8c3ab.js",
     "static/js/787.459b3530.chunk.js": "/bloom-react-app/static/js/787.459b3530.chunk.js",
     "static/media/HappyWoman.png": "/bloom-react-app/static/media/HappyWoman.45b866a5ff7b245ea0bd.png",
     "static/media/Campaign.png": "/bloom-react-app/static/media/Campaign.bcf9c14daa052ff5d112.png",
@@ -14,11 +14,11 @@
     "static/media/someLogoWhite.png": "/bloom-react-app/static/media/someLogoWhite.0fae75836f9cbcd318b9.png",
     "index.html": "/bloom-react-app/index.html",
     "main.996b0a36.css.map": "/bloom-react-app/static/css/main.996b0a36.css.map",
-    "main.eab49932.js.map": "/bloom-react-app/static/js/main.eab49932.js.map",
+    "main.98a8c3ab.js.map": "/bloom-react-app/static/js/main.98a8c3ab.js.map",
     "787.459b3530.chunk.js.map": "/bloom-react-app/static/js/787.459b3530.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.996b0a36.css",
-    "static/js/main.eab49932.js"
+    "static/js/main.98a8c3ab.js"
   ]
 }
