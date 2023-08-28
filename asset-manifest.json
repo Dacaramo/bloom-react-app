@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/logo/static/css/main.996b0a36.css",
+    "main.js": "/logo/static/js/main.db392040.js",
+    "static/js/787.70b94e04.chunk.js": "/logo/static/js/787.70b94e04.chunk.js",
+    "static/media/HappyWoman.png": "/logo/static/media/HappyWoman.45b866a5ff7b245ea0bd.png",
+    "static/media/Campaign.png": "/logo/static/media/Campaign.bcf9c14daa052ff5d112.png",
+    "static/media/CircleWoman.png": "/logo/static/media/CircleWoman.6230b31c59058bb052f9.png",
+    "static/media/SurprisedMan.png": "/logo/static/media/SurprisedMan.b2d136f3c9d010c9a6cc.png",
+    "static/media/Warranty.png": "/logo/static/media/Warranty.bdf09bd6314d683f1961.png",
+    "static/media/Profit.png": "/logo/static/media/Profit.89d3cf400dc53fbad0be.png",
+    "static/media/someLogoBlue.png": "/logo/static/media/someLogoBlue.e7aef35d7e6ba9b92186.png",
+    "static/media/Invest.png": "/logo/static/media/Invest.7231d349d89f6ba24189.png",
+    "static/media/someLogoWhite.png": "/logo/static/media/someLogoWhite.0fae75836f9cbcd318b9.png",
+    "index.html": "/logo/index.html",
+    "main.996b0a36.css.map": "/logo/static/css/main.996b0a36.css.map",
+    "main.db392040.js.map": "/logo/static/js/main.db392040.js.map",
+    "787.70b94e04.chunk.js.map": "/logo/static/js/787.70b94e04.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.996b0a36.css",
+    "static/js/main.db392040.js"
+  ]
+}
